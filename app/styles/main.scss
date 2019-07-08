@@ -1,0 +1,865 @@
+// bower:scss
+// endbower
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block
+}
+
+body {
+  line-height: 1
+}
+
+ol,
+ul {
+  list-style: none
+}
+
+blockquote,
+q {
+  quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+@import "https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap";
+
+$oscuro: #161620;
+
+html {
+  font-family: Montserrat, arial, sans-serif;
+  font-size: 10px;
+  color: $oscuro;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.btn {
+  padding: 1.5rem 2rem;
+  font-weight: 400;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.fixed-bar {
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: $oscuro;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  box-sizing: border-box;
+
+  img {
+    height: 4rem;
+  }
+
+  h2 {
+    letter-spacing: 3px;
+    margin-left: auto;
+    margin-right: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .btn-comprar {
+    color: white;
+    background-color: #d39700;
+    padding: 0.75rem 1.25rem;
+  }
+}
+
+#Header {
+  height: 95vh;
+  padding-top: 3rem;
+  width: 100%;
+  display: flex;
+  background-image: url('../images/headerbg.png');
+  background-size: cover;
+  background-position: center;
+
+  article {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+    h1 {
+      font-size: 5rem;
+      letter-spacing: 7px;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      letter-spacing: 2.5px;
+      font-weight: 600;
+      margin: 2rem 0 2rem;
+    }
+  }
+
+  .Header-btnwrap {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+      border: 1.5px $oscuro solid;
+      width: 45%;
+    }
+
+    .btn-vervideo {
+      background-color: $oscuro;
+      color: white;
+    }
+
+    .btn-masinfo {}
+  }
+}
+
+#Comprar {
+  display: flex;
+  padding: 15rem 0rem 10rem;
+  background: linear-gradient(#e5e5e5, #d4d4d4);
+
+
+  .Comprar-item-wrap {
+    margin: auto;
+    max-width: 1200px;
+    width: 95%;
+
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .Comprar-item {
+    height: 675px;
+    background-color: #F4F4F4;
+    border-radius: 3px;
+    max-width: 32%;
+    width: 350px;
+
+    header {
+      height: 50%;
+      background-color: $oscuro;
+    }
+
+    #Patrizier {
+      background-image: url('../images/patrizier.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    #Vistalago,
+    #Vistalago2 {
+      background-image: url('../images/patrizier.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    section {
+      height: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding: 2rem 1rem 3rem;
+
+      article {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        h3 {
+          font-size: 1.8rem;
+          font-weight: 700;
+          letter-spacing: 2px;
+        }
+
+        h4 {
+          font-size: 8rem;
+          font-weight: 800;
+          margin: 2rem 0;
+        }
+
+        h5,
+        h6 {
+          font-size: 1.2rem;
+        }
+
+        h6 {
+          margin-top: 2rem;
+        }
+
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .Comprar-item-separator {
+      height: 1px;
+      width: 90%;
+      background-color: $oscuro;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .Comprar-btnwrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    .btn {
+      color: white;
+      padding: 1rem 2.5rem;
+    }
+
+    .btn-invertir {
+      background-color: #D39700;
+    }
+
+    .btn-invertirItem {
+      background-color: $oscuro;
+    }
+  }
+}
+
+#Inversores {
+  background: linear-gradient($oscuro, #191923);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0 0;
+  position: relative;
+
+  .Inversores-tag {
+    position: absolute;
+    right: 0.5rem;
+    top: -3rem;
+    z-index: 10;
+    width: 150px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .Inversores-wrap {
+    margin: auto;
+    max-width: 1200px;
+    width: 99%;
+    color: white;
+    text-align: center;
+    padding-bottom: 10rem;
+
+    h1 {
+      font-weight: 700;
+      font-size: 3rem;
+      letter-spacing: 8px;
+
+      span {
+        position: relative;
+      }
+
+      span:after {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: #B07E00;
+        position: absolute;
+        bottom: -1rem;
+        left: 0;
+
+      }
+    }
+  }
+
+  .Inversores-item-wrap {
+    margin-top: 8rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .Inversores-item {
+    width: calc(25% - 1.1rem);
+    max-width: 255px;
+    margin: 1rem;
+    height: 185px;
+    background-color: rgba(216, 216, 216, 0.151);
+    border-radius: 5px;
+    padding: 2rem 4rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    h3 {
+      text-transform: uppercase;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    img {
+      width: 50%;
+    }
+  }
+
+  footer {
+    background-color: #e2e2e2;
+    width: 100%;
+    background-image: url("../images/comprarfooterbg.png");
+    background-size: cover;
+    background-position: center;
+    padding: 12rem 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Inversores-footer-wrap {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .Inversores-footer-item {
+      text-align: center;
+
+      h3 {
+        font-size: 7rem;
+        font-weight: 800;
+
+        span {
+          font-weight: 400;
+        }
+      }
+
+      h4 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin: 2rem 0 0;
+      }
+    }
+  }
+}
+
+#Informacion {
+  min-height: 500px;
+  padding: 8rem 0 0;
+
+  background: linear-gradient(#d4d4d4, #e5e5e5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    letter-spacing: 8px;
+    font-weight: 700;
+    margin-bottom: 8rem;
+
+    span {
+      position: relative;
+    }
+
+    span:after {
+      content: '';
+      width: 100%;
+      height: 3px;
+      background-color: #B07E00;
+      position: absolute;
+      bottom: -1rem;
+      left: 0;
+    }
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    font-weight: 400;
+    width: 80%;
+    margin-bottom: 6rem;
+
+  }
+
+  .Informacion-wrap {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 6rem;
+  }
+
+  .Informacion-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+
+    .Informacion-left-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      h3 {
+        font-size: 4rem;
+        font-weight: 700;
+      }
+
+      img {
+        width: 15rem;
+      }
+    }
+
+    #Information-left-item-whap {
+      color: green;
+    }
+  }
+
+  .Informacion-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      input,
+      textarea {
+        border: none;
+        border-radius: 8px;
+        padding: 1.5rem;
+        width: 80%;
+        margin: 1rem 0;
+        font: inherit;
+        letter-spacing: -1px;
+      }
+
+      textarea {
+        height: 100px;
+        resize: none;
+        font: inherit;
+      }
+    }
+
+
+  }
+
+  footer {
+    background-color: $oscuro;
+    width: 100%;
+    color: white;
+    padding: 6rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+      font-size: 3rem;
+      letter-spacing: 8px;
+      font-weight: 700;
+      margin-bottom: 2rem;
+
+      span {
+        position: relative;
+      }
+
+      span:after {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: #B07E00;
+        position: absolute;
+        bottom: -1rem;
+        left: 0;
+
+      }
+    }
+
+
+    p {
+      font-size: 1.3rem;
+      line-height: 1.6;
+      width: 420px;
+      max-width: 100%;
+      margin-bottom: 3rem;
+    }
+
+    .btn-registrate {
+      background-color: #d39700;
+      color: white;
+    }
+  }
+}
+
+#Dormir {
+  display: flex;
+  background-image: url('../images/dormirbg.png');
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 10rem 0;
+  text-align: center;
+
+  .Dormir-wrap {
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+    letter-spacing: 8px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    background-color: #d39700;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin: 0.5rem 0 10rem 0;
+  }
+
+  img {
+    width: 10rem;
+  }
+
+  p {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+    width: 400px;
+  }
+
+  .btn-nosotros {
+    background-color: #bebebe41;
+    color: white;
+    font-weight: 700;
+    margin-top: 6rem;
+  }
+}
+
+.whitewrap {
+  width: 100%;
+  background-color: #eeeeee;
+  height: 1.75rem;
+}
+
+#Elegir {
+  background-image: url('../images/otrobg.png');
+  background-position: center;
+  background-size: cover;
+  padding: 20rem 0;
+  display: flex;
+  justify-content: center;
+
+  .Elegir-wrap {
+    max-width: 1600px;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .Elegir-item {
+    background-color: #F9F9F9;
+    width: 250px;
+    display: flex;
+    padding-bottom: 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 1.5rem;
+
+    header {
+      width: 100%;
+      background-color: #D08100;
+      padding: 2rem 1rem;
+      box-sizing: border-box;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    p {
+      padding: 2rem;
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .btn-masinfo {
+      background-color: $oscuro;
+      color: white;
+    }
+  }
+}
+
+#Beneficios {
+  position: relative;
+  padding: 13rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 4rem;
+
+    span {
+      font-weight: 400;
+      letter-spacing: 3px;
+    }
+  }
+
+  .Beneficios-tag {
+    position: absolute;
+    right: 0.5rem;
+    top: -2rem;
+    z-index: 10;
+    width: 150px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .bonificado-wrap {
+    max-width: 720px;
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .bonificado-top,
+  .bonificado-bot {
+    display: flex;
+    justify-content: space-between;
+    ;
+    width: 100%;
+  }
+
+  .bonificado-bot {
+    margin-top: 1rem;
+  }
+
+  .bonificado-top-item {
+    border: 2px solid $oscuro;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 1rem 2rem;
+  }
+
+  .bonificado-bot-dolares {
+    background-color: #D08100;
+    padding: 2rem 1.5rem;
+
+    h4 {
+      color: white;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    h5 {
+      font-size: 1.2rem;
+      color: black;
+    }
+  }
+
+  .bonificado-bot-valor {
+    background-color: #C0C0C0;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+  }
+
+  .bonificado-bot-rightwrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .bonificado-bot-right-item {
+    border: 2px solid $oscuro;
+    padding: 1.3rem 0.3rem;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+}
+
+footer {
+  background-color: #e5e5e5;
+  color: $oscuro;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1.4rem;
+}
