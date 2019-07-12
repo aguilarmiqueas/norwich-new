@@ -25,10 +25,23 @@
   <!--[if IE]>
       <p class="browserupgrade">Estás usando un navegador <strong>antiguo</strong>. Por favor, <a href="http://browsehappy.com/">actualizálo</a> para mejorar tu experiencia.</p>
     <![endif]-->
+  <div class="form-overlay">
+    <section class="Informacion-right">
+      <div class="Informacion-right-volver"><p>Volver</p></div>
+        <h2>Dejanos tu pregunta en el siguiente formulario y nos estaremos comunicando con vos para brindarte toda la información que necesites.</h2>
+        <form action="">
+          <input type="text" placeholder="NOMBRE">
+          <input type="text" placeholder="APELLIDO">
+          <input type="text" placeholder="E-MAIL">
+          <textarea name="" placeholder="MENSAJE"></textarea>
+          <button class="btn btn-enviar">ENVIAR</button>
+          </form>
+    </section>
+  </div>
   <div class="fixed-bar">
     <img src="images/logo.svg" alt="" class="logo">
     <h2>COMPRÁ TU DEPARTAMENTO AHORA MISMO Y AHORRÁ $22.769 USD</h2>
-    <button class="btn btn-comprar">¡COMPRAR!</button>
+    <button class="btn btn-comprar abrirPopup">¡COMPRAR!</button>
   </div>
   <main>
     <header id="Header">
@@ -37,31 +50,13 @@
         <h2>TU DEPARTAMENTO EN PARAGUAY</h2>
         <div class="Header-btnwrap">
           <button class="btn btn-vervideo">VER VIDEO</button>
-          <button class="btn btn-masinfo">MÁS INFO</button>
+          <a href="#Comprar" class="btn btn-masinfo">MÁS INFO</a>
         </div>
       </article>
     </header>
     <article id="Comprar">
       <div class="Comprar-item-wrap">
-        <article class="Comprar-item">
-          <header id="Patrizier">
-          </header>
-          <section>
-            <article>
-              <h3>PATRIZIER</h3>
-              <h4>42%</h4>
-              <h5>RENTABILLIDAD ESTIMADA <span>EN DOLARES</span></h5>
-              <h6><img src="" alt=""><span>35 MESES</span></h6>
-            </article>
-            <article>
-              <div class="Comprar-item-separator"></div>
-              <div class="Comprar-btnwrap">
-                <button class="btn btn-invertir">INVERTIR</button>
-                <button class="btn btn-invertirItem">MÁS INFO</button>
-              </div>
-            </article>
-          </section>
-        </article>
+
         <article class="Comprar-item">
           <header id="Vistalago"></header>
           <section>
@@ -69,13 +64,32 @@
               <h3>VISTA LAGO</h3>
               <h4>42%</h4>
               <h5>RENTABILIDAD ESTIMADA <span>EN DOLARES</span></h5>
-              <h6><img src="" alt=""><span>35 MESES</span></h6>
+              <h6><img src="" alt=""><span>24 MESES</span></h6>
             </article>
             <article>
               <div class="Comprar-item-separator"></div>
               <div class="Comprar-btnwrap">
-                <button class="btn btn-invertir">INVERTIR</button>
-                <button class="btn btn-invertirItem">MÁS INFO</button>
+                <button class="btn btn-invertir abrirPopup">INVERTIR</button>
+                <a href="./lagovista/" class="btn btn-invertirItem">MÁS INFO</a>
+              </div>
+            </article>
+          </section>
+        </article>
+                <article class="Comprar-item">
+          <header id="Patrizier">
+          </header>
+          <section>
+            <article>
+              <h3>PATRIZIER</h3>
+              <h4>42%</h4>
+              <h5>RENTABILLIDAD ESTIMADA <span>EN DOLARES</span></h5>
+              <h6><img src="" alt=""><span>24 MESES</span></h6>
+            </article>
+            <article>
+              <div class="Comprar-item-separator"></div>
+              <div class="Comprar-btnwrap">
+                <button class="btn btn-invertir abrirPopup">INVERTIR</button>
+                <a href="./patrizier/" class="btn btn-invertirItem">MÁS INFO</a>
               </div>
             </article>
           </section>
@@ -87,13 +101,13 @@
               <h3>VISTA LAGO</h3>
               <h4>42%</h4>
               <h5>RENTABILLIDAD ESTIMADA <span>EN DOLARES</span></h5>
-              <h6><img src="" alt=""><span>35 MESES</span></h6>
+              <h6><img src="" alt=""><span>24 MESES</span></h6>
             </article>
             <article>
               <div class="Comprar-item-separator"></div>
               <div class="Comprar-btnwrap">
-                <button class="btn btn-invertir">INVERTIR</button>
-                <button class="btn btn-invertirItem">MÁS INFO</button>
+                <button class="btn btn-invertir abrirPopup">INVERTIR</button>
+                <a href="./brochure/" class="btn btn-invertirItem">MÁS INFO</a>
               </div>
             </article>
           </section>
@@ -139,21 +153,14 @@
           </div>
         </div>
       </div>
-      <footer>
-        <div class="Inversores-footer-wrap">
-          <div class="Inversores-footer-item">
-            <h3><span>+</span>19.000 <span>M2</span></h3>
-            <h4>Construidos</h4>
-          </div>
-          <div class="Inversores-footer-item">
-            <h3>$34 <span>MM</span></h3>
-            <h4>En proyectos</h4>
-          </div>
-          <div class="Inversores-footer-item">
-            <h3><span>+</span>500</h3>
-            <h4>Inversores en Latinoamerica</h4>
-          </div>
-        </div>
+      <footer class="slickCarousel">
+        
+        <div class="siemaChild"><img src="images/gal1.png" alt=""></div>
+        <div class="siemaChild"><img src="images/gal2.png" alt=""></div>
+        <div class="siemaChild"><img src="images/gal3.png" alt=""></div>
+        <div class="siemaChild"><img src="images/gal4.png" alt=""></div>
+        <div class="siemaChild"><img src="images/gal5.png" alt=""></div>
+        <div class="siemaChild"><img src="images/gal6.png" alt=""></div>
       </footer>
     </article>
     <article id="Informacion">
@@ -182,6 +189,7 @@
               <input type="text" placeholder="APELLIDO">
               <input type="text" placeholder="E-MAIL">
               <textarea name="" placeholder="MENSAJE"></textarea>
+              <button class="btn btn-enviar">ENVIAR</button>
             </form>
           </section>
         </div>
@@ -190,7 +198,7 @@
         <h2>¿LISTO PARA <span>INVERTIR?</span></h2>
         <p>Registrate ahora y empezá a invertir tus ahorros con el respaldo que te da el mercado inmobiliario e
           implementá tus ganancias hasta un 39%</p>
-        <button class="btn btn-registrate">REGISTRATE</button>
+        <button class="btn btn-registrate abrirPopup">REGISTRATE</button>
       </footer>
     </article>
     <article id="Dormir">
@@ -200,7 +208,7 @@
         <h2>Aumentá tu capital como nunca antes</h2>
         <p>Brindamos acceso a todos los inversores y ahorristas latinoamericanos a invertir en desarrollos
           inmobilliarios</p>
-        <button class="btn btn-nosotros">INVERTÍ CON NOSOTROS</button>
+        <button class="btn btn-nosotros abrirPopup">INVERTÍ CON NOSOTROS</button>
       </div>
     </article>
     <div class="whitewrap"></div>
@@ -212,7 +220,7 @@
           </header>
           <p>Invertí en desarrollos inmobilliarios de alta rentabilidad en Paraguay y Argentina sin montos mínimos ni
             máximos</p>
-          <button class="btn btn-masinfo">MÁS INFO</button>
+          <button class="btn btn-masinfo abrirPopup">MÁS INFO</button>
         </div>
         <div class="Elegir-item">
           <header>
@@ -220,7 +228,7 @@
           </header>
           <p>Con nonsotros, podes invertir 100% online a través de transferencia bancaria, tarjeta de crédito o pagando
             con criptomonedas.</p>
-          <button class="btn btn-masinfo">MÁS INFO</button>
+          <button class="btn btn-masinfo abrirPopup">MÁS INFO</button>
         </div>
       </div>
     </article>
@@ -228,73 +236,34 @@
       <div class="Beneficios-tag"><img src="images/alerta.svg" alt=""></div>
       <div class="Beneficios-wrap">
         <h1>INVERTÍ HOY MISMO CON PRECIO BONIFICADO</h1>
-        <div class="bonificado-wrap">
-          <div class="bonificado-top">
-            <div class="bonificado-top-item">
-              <h3>PRECIO POZO</h3>
-            </div>
-            <div class="bonificado-top-item">
-              <h3>ALTA RENTABILIDAD</h3>
-            </div>
-            <div class="bonificado-top-item">
-              <h3>POSIBILIDAD DE REFUERZOS</h3>
-            </div>
-          </div>
-          <div class="bonificado-bot">
-            <div class="bonificado-bot-dolares">
-              <h4>US$ 2000</h4>
-              <h5>RESERVA</h5>
-            </div>
-            <div class="bonificado-bot-valor">
-              <h4>10% VALOR DPTO LTA</h4>
-            </div>
-            <div class="bonificado-bot-rightwrap">
-              <div class="bonificado-bot-right-item">
-                <h4>24 CUOTAS DURANTE OBRA</h4>
-              </div>
-              <div class="bonificado-bot-right-item">
-                <h4>SALDO FINAL A CONVENIR</h4>
-              </div>
-            </div>
-          </div>
+        <div class="grid-container">
+  <div class="top1"><h3>INVERSIÓN MINIMA</h3></div>
+  <div class="top2"><h3>RENTA ASEGURADA</h3></div>
+  <div class="top3"><h3>PERÍODO DE INVERSIÓN</h3></div>
+  <div class="top4"><h3>RETORNO DE LA RENTA</h3></div>
+  <div class="bot1"><h3>10M2</h3></div>
+  <div class="bot2"><h3>30%</h3></div>
+  <div class="bot3">
+    <div class="bot3top1"><h4>24 MESES</h4></div>
+    <div class="bot3bot1"><h4>M2 BONIFICADO 899USD</h4></div>
+  </div>
+  <div class="bot4"><h3>M2 / EFECTIVO</h3></div>
         </div>
         <h1><span>BENEFICIOS </span>| PAGO CONTADO</h1>
-        <div class="bonificado-wrap">
-          <div class="bonificado-top">
-            <div class="bonificado-top-item">
-              <h3>PRECIO POZO</h3>
-            </div>
-            <div class="bonificado-top-item">
-              <h3>ALTA RENTABILIDAD</h3>
-            </div>
-            <div class="bonificado-top-item">
-              <h3>POSIBILIDAD DE REFUERZOS</h3>
-            </div>
-          </div>
-          <div class="bonificado-bot">
-            <div class="bonificado-bot-dolares">
-              <h4>US$ 2000</h4>
-              <h5>RESERVA</h5>
-            </div>
-            <div class="bonificado-bot-rightwrap">
-              <div class="bonificado-bot-right-item">
-                <h4>24 CUOTAS DURANTE OBRA</h4>
-              </div>
-              <div class="bonificado-bot-right-item">
-                <h4>SALDO FINAL A CONVENIR</h4>
-              </div>
-            </div>
-            <div class="contado-bot-rightwrap">
-              <div class="contado-bot-right-item">
-                <h4>39,64%</h4>
-              </div>
-              <div class="contado-bot-right-item">
-                <h4>28%</h4>
-              </div>
-            </div>
-          </div>
-
+        <div class="grid-container">
+  <div class="top1"><h3>OFERTA INVERSOR</h3></div>
+  <div class="top2"><h3>RENTA ASEGURADA</h3></div>
+  <div class="top3"><h3>PERÍODO DE INVERSIÓN</h3></div>
+  <div class="top4"><h3>RETORNO DE LA RENTA</h3></div>
+  <div class="bot1"><h3>54.000USD</h3></div>
+  <div class="bot2"><h3>42%</h3></div>
+  <div class="bot3">
+    <div class="bot3top1"><h4>24 MESES</h4></div>
+    <div class="bot3bot1"><h4>M2 BONIFICADO 899USD</h4></div>
+  </div>
+  <div class="bot4"><h3>M2 / EFECTIVO</h3></div>
         </div>
+        <button class="btn btn-invertir abrirPopup">INVERTIR</button>
       </div>
       </div>
     </article>
@@ -303,9 +272,8 @@
     </footer>
   </main>
 
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-  </script>
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script src="scripts/slick.min.js"></script>
 
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->

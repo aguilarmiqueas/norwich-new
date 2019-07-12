@@ -1,6 +1,8 @@
 // bower:scss
 // endbower
 
+@import url('./slick.css');
+
 a,
 abbr,
 acronym,
@@ -87,7 +89,7 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline
+  vertical-align: baseline;
 }
 
 article,
@@ -101,21 +103,21 @@ hgroup,
 menu,
 nav,
 section {
-  display: block
+  display: block;
 }
 
 body {
-  line-height: 1
+  line-height: 1;
 }
 
 ol,
 ul {
-  list-style: none
+  list-style: none;
 }
 
 blockquote,
 q {
-  quotes: none
+  quotes: none;
 }
 
 blockquote:after,
@@ -123,12 +125,12 @@ blockquote:before,
 q:after,
 q:before {
   content: "";
-  content: none
+  content: none;
 }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0
+  border-spacing: 0;
 }
 
 @import "https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap";
@@ -146,6 +148,10 @@ body {
   font-weight: 400;
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn {
   padding: 1.5rem 2rem;
   font-weight: 400;
@@ -156,6 +162,94 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  background-color: rgba(187, 187, 187, 0.808);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  transform: scale(0, 0);
+  transition: 150ms all ease;
+
+  &.form-overlay-open {
+    transform: scale(1, 1);
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 1.6;
+    font-weight: 700;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 6rem;
+    color: #383838;
+  }
+
+  .Informacion-right {
+    margin: auto;
+    width: 90%;
+    max-width: 800px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#f0f0f0, #e5e5e5);
+    padding: 10rem 0 5rem;
+    border-radius: 6px;
+    box-shadow: 0px 5px 20px #80808054,
+      0px 1px 4px 1px #8e8e8e9c;
+    position: relative;
+
+    .Informacion-right-volver {
+      position: absolute;
+      left: 3rem;
+      top: 3rem;
+      cursor: pointer;
+
+      p {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      input,
+      textarea {
+        border: none;
+        border-radius: 8px;
+        padding: 1.5rem;
+        width: 80%;
+        margin: 1rem 0;
+        font: inherit;
+        letter-spacing: -1px;
+      }
+
+      textarea {
+        height: 100px;
+        resize: none;
+        font: inherit;
+      }
+    }
+
+    .btn-enviar {
+      margin-bottom: 0;
+      margin-top: 2rem;
+      border: 1px solid $oscuro;
+      padding: 1.25rem 2.5rem;
+    }
+  }
 }
 
 .fixed-bar {
@@ -196,7 +290,7 @@ body {
   padding-top: 3rem;
   width: 100%;
   display: flex;
-  background-image: url('../images/headerbg.jpg');
+  background-image: url("../images/headerbg.jpg");
   background-size: cover;
   background-position: center;
 
@@ -207,7 +301,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-
+    color: white;
 
     h1 {
       font-size: 5rem;
@@ -238,7 +332,10 @@ body {
       color: white;
     }
 
-    .btn-masinfo {}
+    .btn-masinfo {
+      border-color: white;
+      color: white;
+    }
   }
 }
 
@@ -246,7 +343,6 @@ body {
   display: flex;
   padding: 15rem 0rem 10rem;
   background: linear-gradient(#e5e5e5, #d4d4d4);
-
 
   .Comprar-item-wrap {
     margin: auto;
@@ -259,7 +355,7 @@ body {
 
   .Comprar-item {
     height: 675px;
-    background-color: #F4F4F4;
+    background-color: #f4f4f4;
     border-radius: 3px;
     max-width: 32%;
     width: 350px;
@@ -270,14 +366,14 @@ body {
     }
 
     #Patrizier {
-      background-image: url('../images/patrizier.png');
+      background-image: url("../images/patrizier.png");
       background-size: cover;
       background-position: center;
     }
 
     #Vistalago,
     #Vistalago2 {
-      background-image: url('../images/patrizier.png');
+      background-image: url("../images/patrizier.png");
       background-size: cover;
       background-position: center;
     }
@@ -345,7 +441,7 @@ body {
     }
 
     .btn-invertir {
-      background-color: #D39700;
+      background-color: #d39700;
     }
 
     .btn-invertirItem {
@@ -393,14 +489,13 @@ body {
       }
 
       span:after {
-        content: '';
+        content: "";
         width: 100%;
         height: 3px;
-        background-color: #B07E00;
+        background-color: #b07e00;
         position: absolute;
         bottom: -1rem;
         left: 0;
-
       }
     }
   }
@@ -441,15 +536,49 @@ body {
 
   footer {
     background-color: #e2e2e2;
-    width: 100%;
-    background-image: url("../images/comprarfooterbg.png");
-    background-size: cover;
-    background-position: center;
-    padding: 12rem 0;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+
+    ul.slick-dots {
+      position: absolute;
+      display: flex;
+      bottom: 3rem;
+
+      li {
+        button {
+          font-size: 0;
+          background-color: white;
+          border-radius: 50%;
+          border: none;
+          height: 1.5rem;
+          width: 1.5rem;
+          box-sizing: border-box;
+          margin: 0 1rem;
+          cursor: pointer;
+        }
+      }
+
+      li.slick-active {
+        button {
+          background-color: $oscuro;
+        }
+      }
+    }
+
+    .siemaChild {
+      width: 100%;
+      max-height: 750px;
+      overflow-y: hidden;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 100%;
+      }
+    }
 
     .Inversores-footer-wrap {
       width: 100%;
@@ -502,14 +631,21 @@ body {
     }
 
     span:after {
-      content: '';
+      content: "";
       width: 100%;
       height: 3px;
-      background-color: #B07E00;
+      background-color: #b07e00;
       position: absolute;
       bottom: -1rem;
       left: 0;
     }
+  }
+
+  .btn-enviar {
+    margin-bottom: 0;
+    margin-top: 2rem;
+    border: 1px solid $oscuro;
+    padding: 1.25rem 2.5rem;
   }
 
   h2 {
@@ -518,7 +654,6 @@ body {
     font-weight: 400;
     width: 80%;
     margin-bottom: 6rem;
-
   }
 
   .Informacion-wrap {
@@ -585,8 +720,6 @@ body {
         font: inherit;
       }
     }
-
-
   }
 
   footer {
@@ -611,17 +744,15 @@ body {
       }
 
       span:after {
-        content: '';
+        content: "";
         width: 100%;
         height: 3px;
-        background-color: #B07E00;
+        background-color: #b07e00;
         position: absolute;
         bottom: -1rem;
         left: 0;
-
       }
     }
-
 
     p {
       font-size: 1.3rem;
@@ -640,7 +771,7 @@ body {
 
 #Dormir {
   display: flex;
-  background-image: url('../images/dormirbg.png');
+  background-image: url("../images/dormirbg.png");
   background-position: center;
   background-size: cover;
   color: white;
@@ -701,7 +832,7 @@ body {
 }
 
 #Elegir {
-  background-image: url('../images/otrobg.png');
+  background-image: url("../images/otrobg.png");
   background-position: center;
   background-size: cover;
   padding: 20rem 0;
@@ -716,7 +847,7 @@ body {
   }
 
   .Elegir-item {
-    background-color: #F9F9F9;
+    background-color: #f9f9f9;
     width: 250px;
     display: flex;
     padding-bottom: 3rem;
@@ -729,7 +860,7 @@ body {
 
     header {
       width: 100%;
-      background-color: #D08100;
+      background-color: #d08100;
       padding: 2rem 1rem;
       box-sizing: border-box;
       font-size: 1.8rem;
@@ -793,7 +924,6 @@ body {
   .bonificado-bot {
     display: flex;
     justify-content: space-between;
-    ;
     width: 100%;
   }
 
@@ -810,7 +940,7 @@ body {
   }
 
   .bonificado-bot-dolares {
-    background-color: #D08100;
+    background-color: #d08100;
     padding: 2rem 1.5rem;
 
     h4 {
@@ -827,7 +957,7 @@ body {
   }
 
   .bonificado-bot-valor {
-    background-color: #C0C0C0;
+    background-color: #c0c0c0;
     color: white;
     padding: 1rem 2rem;
     font-size: 2rem;
@@ -853,6 +983,94 @@ body {
     font-size: 1.3rem;
     font-weight: 700;
     letter-spacing: 2px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "top1 top2 top3 top4""bot1 bot2 bot3 bot4";
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 3rem 0;
+  }
+
+  .top1,
+  .top2,
+  .top3,
+  .top4,
+  .bot1,
+  .bot2,
+  .bot4,
+  .bot3top1,
+  .bot3bot1 {
+    border: 2px solid $oscuro;
+    margin: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem;
+  }
+
+  .top1 {
+    grid-area: top1;
+  }
+
+  .top2 {
+    grid-area: top2;
+  }
+
+  .top3 {
+    grid-area: top3;
+  }
+
+  .top4 {
+    grid-area: top4;
+  }
+
+  .bot1 {
+    grid-area: bot1;
+    background-color: #d08100;
+    color: white;
+    border: none;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .bot2 {
+    grid-area: bot2;
+    background-color: #c0c0c0;
+    color: white;
+    border: none;
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+
+  .bot3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "bot3top1 bot3top1 bot3top1""bot3bot1 bot3bot1 bot3bot1";
+    grid-area: bot3;
+  }
+
+  .bot3top1 {
+    grid-area: bot3top1;
+  }
+
+  .bot3bot1 {
+    grid-area: bot3bot1;
+  }
+
+  .bot4 {
+    grid-area: bot4;
+  }
+
+  .btn-invertir {
+    background-color: #d08100;
+    color: white;
+    padding: 1.25rem 2.5rem;
   }
 }
 
