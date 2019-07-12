@@ -1,7 +1,7 @@
-const formOverlay = document.querySelector(".form-overlay");
-const botonDeVolver = document.querySelector(".Informacion-right-volver");
+const formOverlay = document.querySelector('.form-overlay');
+const botonDeVolver = document.querySelector('.Informacion-right-volver');
 
-const botonesDeAbrir = document.querySelectorAll(".abrirPopup");
+const botonesDeAbrir = document.querySelectorAll('.abrirPopup');
 
 let listaDeBotonesPopup = [];
 listaDeBotonesPopup.push(botonDeVolver);
@@ -11,14 +11,14 @@ botonesDeAbrir.forEach(botonDeAbrir => {
 });
 
 listaDeBotonesPopup.forEach(botonPopup => {
-  botonPopup.addEventListener("click", function() {
-    formOverlay.classList.toggle("form-overlay-open");
+  botonPopup.addEventListener('click', function() {
+    formOverlay.classList.toggle('form-overlay-open');
   });
 });
 
-$(".slickCarousel").slick({
+$('.slickCarousel').slick({
   dots: true,
   arrows: false,
-  lazyLoad: "progressive",
+  lazyLoad: 'progressive',
   adaptiveHeight: true
 });
