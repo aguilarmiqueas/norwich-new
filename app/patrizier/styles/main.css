@@ -620,6 +620,9 @@ footer img {
   max-height: 800px;
   overflow-y: hidden;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #Galeria img {
