@@ -111,15 +111,15 @@ gulp.task("extras", () => {
 });
 
 gulp.task("patrizier", function() {
-  gulp.src("./app/patrizier/*/*").pipe(gulp.dest("dist/patrizier"));
+  gulp.src("./app/patrizier/**/*").pipe(gulp.dest("dist/patrizier"));
 });
 
 gulp.task("vistalago", function() {
-  gulp.src("./app/lagovista/*/*").pipe(gulp.dest("dist/lagovista"));
+  gulp.src("./app/lagovista/**/*").pipe(gulp.dest("dist/lagovista"));
 });
 
 gulp.task("brochure", function() {
-  gulp.src("./app/brochure/*/*").pipe(gulp.dest("dist/brochure"));
+  gulp.src("./app/brochure/**/*").pipe(gulp.dest("dist/brochure"));
 });
 
 gulp.task("clean", del.bind(null, [".tmp", "dist"]));
