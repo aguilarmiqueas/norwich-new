@@ -1,7 +1,7 @@
 // bower:scss
 // endbower
 
-@import 'slick';
+@import "slick";
 
 a,
 abbr,
@@ -150,6 +150,21 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+@keyframes slide {
+  0% {
+    background-position: center;
+  }
+
+  50% {
+    background-position: -200px center;
+  }
+
+  100% {
+    background-position: center;
+  }
 }
 
 .btn {
@@ -173,6 +188,9 @@ a {
   height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   transform: scale(0, 0);
   transition: 150ms all ease;
 
@@ -201,9 +219,9 @@ a {
     background: linear-gradient(#f0f0f0, #e5e5e5);
     padding: 10rem 0 5rem;
     border-radius: 6px;
-    box-shadow: 0px 5px 20px #80808054,
-      0px 1px 4px 1px #8e8e8e9c;
+    box-shadow: 0px 5px 20px #80808054, 0px 1px 4px 1px #8e8e8e9c;
     position: relative;
+    transform: scale(0.75);
 
     .Informacion-right-volver {
       position: absolute;
@@ -293,6 +311,7 @@ a {
   background-image: url("../images/headerbg.jpg");
   background-size: cover;
   background-position: center;
+  animation: slide linear 45s infinite;
 
   article {
     margin: auto;
@@ -339,9 +358,82 @@ a {
   }
 }
 
+#Listo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 400px 0 0;
+
+  background-image: url("../images/listo-bg.jpg");
+  background-size: cover;
+  background-position: center -5px;
+
+  .Listo-wrap {
+    max-width: 1200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 600;
+    }
+
+    h4 {
+      background-color: #d39700;
+      padding: 1rem;
+      margin: 2rem 0;
+    }
+
+    p {
+      width: 575px;
+      line-height: 1.4;
+    }
+  }
+}
+
+.ListoParaInvertir {
+  width: 100%;
+  background-color: white;
+  padding: 3rem 0 4.5rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 10rem;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    color: $oscuro;
+  }
+
+  h6,
+  p,
+  a {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $oscuro;
+    margin: 0.5rem 0;
+  }
+
+  img {
+    position: absolute;
+    right: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+  }
+}
+
 #Comprar {
   display: flex;
-  padding: 15rem 0rem 10rem;
+  flex-direction: column;
+  padding: 15rem 0rem 0;
   background: linear-gradient(#e5e5e5, #d4d4d4);
 
   .Comprar-item-wrap {
@@ -359,23 +451,31 @@ a {
     border-radius: 3px;
     max-width: 32%;
     width: 350px;
+    position: relative;
+
+    .enc {
+      position: absolute;
+      left: -1px;
+      top: -1px;
+    }
 
     header {
       height: 50%;
       background-color: $oscuro;
+      background-size: cover;
+      background-position: center;
     }
 
     #Patrizier {
       background-image: url("../images/patrizier.png");
-      background-size: cover;
-      background-position: center;
     }
 
-    #Vistalago,
+    #Vistalago {
+      background-image: url("../images/vistalago-bg.jpg");
+    }
+
     #Vistalago2 {
-      background-image: url("../images/patrizier.png");
-      background-size: cover;
-      background-position: center;
+      background-image: url("../images/consultorios-bg.jpg");
     }
 
     section {
@@ -414,6 +514,12 @@ a {
 
         h6 {
           margin-top: 2rem;
+          display: flex;
+          align-items: flex-end;
+          img {
+            width: 1.75rem;
+            margin-right: 0.75rem;
+          }
         }
 
         span {
@@ -437,15 +543,18 @@ a {
 
     .btn {
       color: white;
-      padding: 1rem 2.5rem;
+      padding: 1rem 0;
+      width: calc(100% - 3rem);
+    }
+
+    .btn-compraConsultorios {
+      background-color: $oscuro;
+      color: white;
     }
 
     .btn-invertir {
       background-color: #d39700;
-    }
-
-    .btn-invertirItem {
-      background-color: $oscuro;
+      color: black;
     }
   }
 }
@@ -989,7 +1098,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "top1 top2 top3 top4""bot1 bot2 bot3 bot4";
+    grid-template-areas: "top1 top2 top3 top4" "bot1 bot2 bot3 bot4";
     font-size: 1.3rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -1051,7 +1160,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "bot3top1 bot3top1 bot3top1""bot3bot1 bot3bot1 bot3bot1";
+    grid-template-areas: "bot3top1 bot3top1 bot3top1" "bot3bot1 bot3bot1 bot3bot1";
     grid-area: bot3;
   }
 
