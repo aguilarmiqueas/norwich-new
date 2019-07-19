@@ -1,6 +1,8 @@
 "use strict";
-$("#Galeria").slick({
-  dots: true,
-  arrows: false,
-  adaptiveHeight: true
-});
+window.onload = function() {
+  $("#Galeria").slick({
+    dots: true,
+    arrows: false,
+    adaptiveHeight: true
+  });
+};
