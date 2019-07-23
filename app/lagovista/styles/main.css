@@ -166,16 +166,14 @@ header {
 .header-2 {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-  align-items: center;
   position: relative;
-  height: 20rem;
-  padding: 0 4rem
+  height: 85vh;
+  padding: 0;
 }
 
 .header-2 h1 {
   right: 8rem;
-  bottom: -10.7rem;
+  top: 4rem;
   text-align: right;
   font-size: 5.5rem;
   font-weight: 800;
@@ -189,7 +187,10 @@ header {
 }
 
 .header-2 img {
-  height: 18rem
+  height: 18rem;
+  position: relative;
+  left: 4rem;
+  top: 4rem;
 }
 
 .header-3 {
@@ -912,4 +913,25 @@ a {
   margin-top: 2rem;
   border: 1px solid #161620;
   padding: 1.25rem 2.5rem;
+}
+
+.header-2-vidwrap {
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+}
+
+.header-2-vidwrap video {
+
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
 }
