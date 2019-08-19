@@ -282,7 +282,8 @@ header {
   bottom: 1rem;
   right: 2%;
   font-weight: 800;
-  text-align: right
+  text-align: right;
+  z-index: 500;
 }
 
 .header-4_redes h4 {
@@ -934,4 +935,49 @@ a {
   min-width: 100%;
   min-height: 100%;
   width: auto;
+}
+
+.fixed-bar {
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #161620;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  box-sizing: border-box;
+}
+
+.fixed-bar img {
+  height: 4rem;
+}
+
+.fixed-bar h2 {
+  letter-spacing: 3px;
+  margin-left: auto;
+  margin-right: 2rem;
+  font-size: 1.4rem;
+}
+
+.fixed-bar .btn-comprar {
+  color: white;
+  background-color: #d39700;
+  padding: 0.75rem 1.25rem;
+}
+
+.btn {
+  padding: 1.5rem 2rem;
+  font-weight: 400;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }

@@ -21,6 +21,10 @@ window.onload = function() {
   $("#Galeria").slick({
     dots: true,
     arrows: false,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000
   });
 };

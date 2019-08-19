@@ -24,14 +24,29 @@
           ¡Gracias por comunicarte con nosotros! Completa el formulario para que
           un asesor pueda brindarte la información que necesitas
         </h2>
-        <form action="">
-          <input type="text" placeholder="NOMBRE" />
-          <input type="text" placeholder="APELLIDO" />
-          <input type="text" placeholder="E-MAIL" />
-          <textarea name="" placeholder="MENSAJE"></textarea>
-          <button class="btn btn-enviar">ENVIAR</button>
+        <form
+          id="form1"
+          action="https://formspree.io/ventas@norwichpy.com"
+          method="POST"
+        >
+          <input name="Nombre" type="text" placeholder="NOMBRE" />
+          <input name="Apellido" type="text" placeholder="APELLIDO" />
+          <input name="E-MAIL" type="email" placeholder="E-MAIL" />
+          <textarea name="Mensaje" placeholder="MENSAJE"></textarea>
+          <button
+            onclick="document.getElementById('form1').submit()"
+            type="submit"
+            class="btn btn-enviar"
+          >
+            ENVIAR
+          </button>
         </form>
       </section>
+    </div>
+    <div class="fixed-bar">
+      <a href=".."><img src="images/logonor.svg" alt="" class="logo"/></a>
+      <h2>COMPRÁ TU DEPARTAMENTO AHORA MISMO Y AHORRÁ $22.769 USD</h2>
+      <button class="btn btn-comprar abrirPopup">¡COMPRAR!</button>
     </div>
     <main>
       <header>

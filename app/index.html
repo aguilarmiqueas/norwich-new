@@ -29,19 +29,19 @@
     <section class="Informacion-right">
       <div class="Informacion-right-volver"><p>Volver</p></div>
         <h2>¡Gracias por comunicarte con nosotros! Completa el formulario para que un asesor pueda brindarte la información que necesitas</h2>
-        <form action="">
-          <input type="text" placeholder="NOMBRE">
-          <input type="text" placeholder="APELLIDO">
-          <input type="text" placeholder="E-MAIL">
-          <textarea name="" placeholder="MENSAJE"></textarea>
-          <button class="btn btn-enviar">ENVIAR</button>
-          </form>
+        <form id="form1" action="https://formspree.io/ventas@norwichpy.com" method="POST">
+          <input name="Nombre" type="text" placeholder="NOMBRE" />
+          <input name="Apellido" type="text" placeholder="APELLIDO" />
+          <input name="E-MAIL" type="email" placeholder="E-MAIL" />
+          <textarea name="Mensaje" placeholder="MENSAJE"></textarea>
+          <button onclick="document.getElementById('form1').submit()" type="submit" class="btn btn-enviar">ENVIAR</button>
+        </form>
     </section>
   </div>
   <div class="fixed-bar">
-    <img src="images/logo.svg" alt="" class="logo">
-    <h2>COMPRÁ TU DEPARTAMENTO AHORA MISMO Y AHORRÁ $22.769 USD</h2>
-    <button class="btn btn-comprar abrirPopup">¡COMPRAR!</button>
+    <a href=""><img src="images/logo.svg" alt="" class="logo"></a>
+    <h2 class="hidden-in-mobile">COMPRÁ TU DEPARTAMENTO AHORA MISMO Y AHORRÁ $22.769 USD</h2>
+    <button class="btn btn-comprar abrirPopup hidden-in-mobile">¡COMPRAR!</button>
   </div>
   <main>
     <header id="Header">
@@ -49,12 +49,11 @@
         <h1>54.000 USD</h1>
         <h2>TU DEPARTAMENTO EN PARAGUAY</h2>
         <div class="Header-btnwrap">
-          <a href="#Listo" class="btn btn-masinfo">MÁS INFO</a>
-          <a href="https://www.youtube.com/channel/UCIZi2xesye_FPEEBa9UCccw" class="btn btn-vervideo">VER VIDEO</a>
+          <a href="#Comprar" class="btn btn-masinfo">MÁS INFO</a>
+          <a target="_blank" href="https://www.youtube.com/channel/UCIZi2xesye_FPEEBa9UCccw" class="btn btn-vervideo">VER VIDEO</a>
         </div>
       </article>
     </header>
-    <div class="whitewrap"></div>
     <div id="Listo">
       <div class="Listo-wrap">
         <h2>70 AÑOS DE TRAYECTORIA RESPALDAN NUESTROS DESARROLLLOS</h2>
@@ -65,7 +64,7 @@
         <div class="Listo-footer-wrap">
           <h2>¿LISTO PARA INVERTIR?</h2>
           <h6>Contacto</h6>
-          <p><a href="">(+549)3624 716193</a>/<a href="">(+595)983200537</a></p>
+          <p><a href="tel:+5493624716193">(+549)3624 716193</a>/<a href="tel:+595983200537">(+595)983200537</a></p>
           <a>ventas@norwichpy.com</a> 
         </div>
         <img src="images/comercioparaguayo.png" alt="">
@@ -141,7 +140,7 @@
       </footer>
     </article>
     <article id="Inversores">
-      <div class="Inversores-tag"><img src="images/descuento.svg" alt=""></div>
+      <div class="Inversores-tag hidden-in-mobile"><img src="images/descuento.svg" alt=""></div>
       <div class="Inversores-wrap">
         <h1>MODELOS DE NEGOCIO PARA <span>INVERSORES</span></h1>
         <div class="Inversores-item-wrap">
@@ -210,13 +209,13 @@
             <h2>Dejanos tu pregunta en el siguiente formulario y nos estaremos comunicando con vos para brindarte toda
               la
               información que necesites.</h2>
-            <form action="">
-              <input type="text" placeholder="NOMBRE">
-              <input type="text" placeholder="APELLIDO">
-              <input type="text" placeholder="E-MAIL">
-              <textarea name="" placeholder="MENSAJE"></textarea>
-              <button class="btn btn-enviar">ENVIAR</button>
-            </form>
+        <form id="form2" action="https://formspree.io/ventas@norwichpy.com" method="POST">
+          <input name="Nombre" type="text" placeholder="NOMBRE" />
+          <input name="Apellido" type="text" placeholder="APELLIDO" />
+          <input name="E-MAIL" type="email" placeholder="E-MAIL" />
+          <textarea name="Mensaje" placeholder="MENSAJE"></textarea>
+          <button onclick="document.getElementById('form2').submit()" type="submit" class="btn btn-enviar">ENVIAR</button>
+        </form>
           </section>
         </div>
       </div>
@@ -237,7 +236,6 @@
         <button class="btn btn-nosotros abrirPopup">INVERTÍ CON NOSOTROS</button>
       </div>
     </article>
-    <div class="whitewrap"></div>
     <article id="Elegir">
       <div class="Elegir-wrap">
         <div class="Elegir-item">
@@ -259,7 +257,7 @@
       </div>
     </article>
     <article id="Beneficios">
-      <div class="Beneficios-tag"><img src="images/alerta.svg" alt=""></div>
+      <div class="Beneficios-tag hidden-in-mobile"><img src="images/alerta.svg" alt=""></div>
       <div class="Beneficios-wrap">
         <h1>INVERTÍ HOY MISMO CON PRECIO BONIFICADO</h1>
         <div class="grid-container">
@@ -293,7 +291,7 @@
       </div>
       </div>
     </article>
-    <footer>
+    <footer id="MainFooter">
       <h2>Norwich todos los derechos reservados.</h2>
     </footer>
   </main>
