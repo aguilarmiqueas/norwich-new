@@ -860,6 +860,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
   }
 
   .header-4_redes a {
@@ -1051,5 +1052,11 @@ a {
 
   footer img {
     margin-bottom: 2rem;
+  }
+
+  .tickk {
+    height: 100% !important;
+    width: 5rem !important;
+    object-fit: initial !important;
   }
 }
