@@ -797,3 +797,259 @@ a {
   border: none;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .form-overlay .Informacion-right {
+    padding: 7.6rem 0 4.6rem;
+    width: 100%;
+    transform: scale(0.85);
+  }
+
+  .form-overlay .Informacion-right h2 {
+    width: 90%;
+    line-height: 1.2;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .form-overlay .Informacion-right form input,
+  .form-overlay .Informacion-right form textarea {
+    padding: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .hidden-in-mobile {
+    display: none;
+  }
+
+  .fixed-bar {
+    justify-content: center;
+  }
+
+  .header-2 {
+    height: 10rem;
+    margin-top: 3.25rem;
+  }
+
+  .header-2 h1 {
+    top: initial;
+    font-size: 3rem;
+    bottom: 6rem;
+    right: 10%;
+    letter-spacing: 1rem;
+  }
+
+  .header-4 {
+    height: initial;
+  }
+
+  .header-4 h1 {
+    position: initial;
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    width: 75%;
+  }
+
+  .header-4_redes {
+    position: initial;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header-4_redes a {
+    align-self: center;
+  }
+
+  .header-4_overlay {
+    position: relative;
+    top: initial;
+    left: initial;
+    right: initial;
+    width: 90%;
+    height: initial;
+    margin-top: 195px;
+  }
+
+  .header-4_overlay img {
+    margin-top: 2rem;
+  }
+
+  .header-4_overlay_overlay {
+    right: -2%;
+    top: initial;
+    bottom: 0;
+  }
+
+  .header-4_overlay_overlay p {
+    font-size: 2rem;
+  }
+
+  .wrap {
+    width: 100%;
+  }
+
+  .header-4 .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+
+  .header-4_buttons {
+    display: none;
+  }
+
+  .pulse {
+    display: none;
+  }
+
+  .layout {
+    width: 95%;
+  }
+
+  #Background-wrap .w1 .wrap {
+    padding-bottom: 6rem;
+    margin: 0;
+    justify-content: center;
+  }
+
+  #Background-wrap .w1 .wrap h1 {
+    right: 5%;
+    top: -25px;
+    font-size: 4rem;
+  }
+
+
+
+  #Background-wrap .w1 .wrap img {
+    object-fit: cover;
+    height: 60vh;
+  }
+
+  .yt {
+    height: initial !important;
+  }
+
+  .h1wrap {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .w2 {
+    padding: 0;
+    margin-bottom: 0;
+    height: initial;
+  }
+
+  .w2 .wrap {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3rem;
+  }
+
+  #Financiamiento h1 {
+    font-size: 3.5rem;
+    margin-right: 5%;
+    margin-bottom: 6rem;
+  }
+
+  #Rincon {
+    padding: 0;
+    height: initial;
+  }
+
+  #Rincon .wrap {
+    padding-bottom: 7rem;
+  }
+
+  .dormitorios {
+    background-color: #c6c457;
+    width: 100%;
+    padding: 1rem 3rem;
+    position: initial;
+  }
+
+  .financiamiento_overlay article p {
+    font-size: 1.4rem;
+  }
+
+  .layout {
+    margin-top: 3rem;
+  }
+
+  .dormitorios h3 {
+    text-align: center;
+  }
+
+  .dormitorios-bar {
+    background-color: initial;
+  }
+
+  .rincon-reserva {
+    bottom: 0rem;
+  }
+
+  .rincon-reserva p {
+    font-size: 2rem;
+  }
+
+  #Financiamiento {
+    padding-bottom: 6rem;
+  }
+
+  .financiamiento_reservar {
+    margin-top: 6rem;
+  }
+
+  .financiamiento_overlay {
+    width: 90%;
+    height: initial;
+  }
+
+  .financiamiento_overlay img {
+    margin-top: 3rem;
+  }
+
+  #Mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Mapa .mapa-circle {
+    width: 100%;
+    height: 400px;
+    position: initial;
+    border-radius: initial;
+  }
+
+  #Mapa .mapa-circle iframe {
+    border-radius: initial;
+  }
+
+  #Mapa p {
+    position: initial;
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer a {
+    margin: 0;
+  }
+
+  footer img {
+    margin-bottom: 2rem;
+  }
+}

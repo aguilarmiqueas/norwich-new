@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/kvh4qba.css");
 
+/* #region */
 a,
 abbr,
 acronym,
@@ -148,6 +149,8 @@ body {
   font-size: 1.4rem;
   color: #000
 }
+
+/* #endregion */
 
 .wrap {
   width: 1280px
@@ -980,4 +983,281 @@ a {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .form-overlay .Informacion-right {
+    padding: 7.6rem 0 4.6rem;
+    width: 100%;
+    transform: scale(0.85);
+  }
+
+  .form-overlay .Informacion-right h2 {
+    width: 90%;
+    line-height: 1.2;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .form-overlay .Informacion-right form input,
+  .form-overlay .Informacion-right form textarea {
+    padding: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .hidden-in-mobile {
+    display: none;
+  }
+
+  .fixed-bar {
+    justify-content: center;
+  }
+
+  .header-2 h1 {
+    top: initial;
+    font-size: 3rem;
+    bottom: 6rem;
+    right: 10%;
+  }
+
+  .header-2 img {
+    height: 13rem;
+    left: 5%;
+  }
+
+  .header-3 {
+    height: initial;
+    padding: 1rem 0;
+  }
+
+  .header-4 {
+    height: initial;
+  }
+
+  .header-4 h1 {
+    position: initial;
+    font-size: 3.5rem;
+    width: 75%;
+  }
+
+  .header-4_redes {
+    position: initial;
+  }
+
+  .edificio {
+    width: 275px;
+    position: relative;
+    left: initial;
+    right: initial;
+    top: initial;
+    bottom: initial;
+    margin-top: 275px;
+  }
+
+  .edificio h2 {
+    position: absolute;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    left: initial;
+    right: initial;
+    bottom: initial;
+    top: -22rem;
+  }
+
+  .foto {
+    left: 0;
+    top: 0;
+    position: initial !important;
+    width: 100%;
+  }
+
+  #EdificioTexto1,
+  #EdificioTexto2,
+  #EdificioTexto3,
+  #EdificioTexto4 {
+    font-size: 0.8rem;
+  }
+
+  #EdificioTexto3 h4,
+  #EdificioTexto2 h4 {
+    font-size: 1.5rem;
+  }
+
+  #EdificioTexto1 {
+    left: -5px;
+    right: initial;
+    top: 19px;
+  }
+
+  #EdificioTexto2 {
+    left: -15px;
+    right: initial;
+    top: 175px;
+
+  }
+
+  #EdificioTexto3 {
+    right: -10px;
+    top: 89px;
+  }
+
+  #EdificioTexto4 {
+    right: -5px;
+    top: 307px;
+  }
+
+  #EdificioTexto4 img {
+    height: 2rem;
+  }
+
+  .header-4_overlay {
+    position: relative;
+    top: initial;
+    left: initial;
+    right: initial;
+    width: 90%;
+    height: initial;
+    margin-top: 3rem;
+  }
+
+  .header-4_overlay img {
+    margin-top: 2rem;
+  }
+
+  .header-4_overlay_overlay {
+    right: -2%;
+    top: initial;
+    bottom: 0;
+  }
+
+  .header-4_overlay_overlay p {
+    font-size: 2rem;
+  }
+
+  .wrap {
+    width: 100%;
+  }
+
+  .header-4 .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+
+  .header-4_buttons {
+    display: none;
+  }
+
+  .pulse {
+    display: none;
+  }
+
+  .layout {
+    width: 95%;
+  }
+
+  #Financiamiento h1 {
+    font-size: 3.5rem;
+    margin-right: 5%;
+    margin-bottom: 6rem;
+  }
+
+  #Rincon {
+    padding: 0;
+    height: initial;
+  }
+
+  #Rincon .wrap {
+    padding-bottom: 7rem;
+  }
+
+  .dormitorios {
+    background-color: #e5ae00;
+    width: 100%;
+    padding: 1rem 3rem;
+    position: initial;
+  }
+
+  .financiamiento_overlay article p {
+    font-size: 1.4rem;
+  }
+
+  .layout {
+    margin-top: 3rem;
+  }
+
+  .dormitorios h3 {
+    text-align: center;
+  }
+
+  .dormitorios-bar {
+    background-color: initial;
+  }
+
+  .rincon-reserva {
+    bottom: 0rem;
+  }
+
+  .rincon-reserva p {
+    font-size: 2rem;
+  }
+
+  #Financiamiento {
+    padding-bottom: 6rem;
+  }
+
+  .financiamiento_reservar {
+    margin-top: 6rem;
+  }
+
+  .financiamiento_overlay {
+    width: 90%;
+    height: initial;
+  }
+
+  .financiamiento_overlay img {
+    margin-top: 3rem;
+  }
+
+  #Mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Mapa .mapa-circle {
+    width: 100%;
+    height: 400px;
+    position: initial;
+    border-radius: initial;
+  }
+
+  #Mapa .mapa-circle iframe {
+    border-radius: initial;
+  }
+
+  #Mapa p {
+    position: initial;
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer a {
+    margin: 0;
+  }
+
+  footer img {
+    margin-bottom: 2rem;
+  }
 }
